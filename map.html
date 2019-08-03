@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+  	.map {
+  		width: 19200px;
+  		height: 19200px;
+  	}
+
+  	.map .tile {
+  		position: absolute;
+  	}
+
+  	.tile {
+  		border: 1px #000 dotted;
+  	}
+
+  	.row-0 { top: 0px; }
+		.row-1 { top: 1920px; }
+		.row-2 { top: 3840px; }
+		.row-3 { top: 5760px; }
+		.row-4 { top: 7680px; }
+		.row-5 { top: 9600px; }
+		.row-6 { top: 11520px; }
+		.row-7 { top: 13440px; }
+		.row-8 { top: 15360px; }
+		.row-9 { top: 17280px; }
+
+		.col-0 { left: 0px; }
+		.col-1 { left: 1920px; }
+		.col-2 { left: 3840px; }
+		.col-3 { left: 5760px; }
+		.col-4 { left: 7680px; }
+		.col-5 { left: 9600px; }
+		.col-6 { left: 11520px; }
+		.col-7 { left: 13440px; }
+		.col-8 { left: 15360px; }
+		.col-9 { left: 17280px; }
+
+		.tile img {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.tile .lv-fa { z-index: 8; }
+		.tile .lv-recycle { z-index: 7; }
+		.tile .lv-route { z-index: 6; }
+		.tile .lv-nogo { z-index: 5; }
+		.tile .lv-exits { z-index: 4; }
+		.tile .lv-mtr { z-index: 3; }
+		.tile .lv-shk { z-index: 2; }
+		.tile .lv-tko_whole { z-index: -1; }
+  </style>
+</head>
+<body>
+	<!--<div class="map" id="map"></div>-->
+
+	<div class="map" id="map"><div class="tile row-0 col-0"><img src="tko_whole/tko_whole_0_0.png" class="lv-tko_whole"></div><div class="tile row-0 col-1"><img src="tko_whole/tko_whole_0_1.png" class="lv-tko_whole"></div><div class="tile row-0 col-2"><img src="tko_whole/tko_whole_0_2.png" class="lv-tko_whole"></div><div class="tile row-0 col-3"><img src="tko_whole/tko_whole_0_3.png" class="lv-tko_whole"></div><div class="tile row-0 col-4"><img src="tko_whole/tko_whole_0_4.png" class="lv-tko_whole"></div><div class="tile row-0 col-5"><img src="tko_whole/tko_whole_0_5.png" class="lv-tko_whole"></div><div class="tile row-0 col-6"><img src="tko_whole/tko_whole_0_6.png" class="lv-tko_whole"></div><div class="tile row-0 col-7"><img src="tko_whole/tko_whole_0_7.png" class="lv-tko_whole"></div><div class="tile row-0 col-8"><img src="tko_whole/tko_whole_0_8.png" class="lv-tko_whole"></div><div class="tile row-0 col-9"><img src="tko_whole/tko_whole_0_9.png" class="lv-tko_whole"></div><div class="tile row-1 col-0"><img src="tko_whole/tko_whole_1_0.png" class="lv-tko_whole"></div><div class="tile row-1 col-1"><img src="tko_whole/tko_whole_1_1.png" class="lv-tko_whole"></div><div class="tile row-1 col-2"><img src="tko_whole/tko_whole_1_2.png" class="lv-tko_whole"></div><div class="tile row-1 col-3"><img src="fa/fa_1_3.png" class="lv-fa"><img src="route/route_1_3.png" class="lv-route"><img src="nogo/nogo_1_3.png" class="lv-nogo"><img src="mtr/mtr_1_3.png" class="lv-mtr"><img src="tko_whole/tko_whole_1_3.png" class="lv-tko_whole"></div><div class="tile row-1 col-4"><img src="fa/fa_1_4.png" class="lv-fa"><img src="route/route_1_4.png" class="lv-route"><img src="mtr/mtr_1_4.png" class="lv-mtr"><img src="tko_whole/tko_whole_1_4.png" class="lv-tko_whole"></div><div class="tile row-1 col-5"><img src="tko_whole/tko_whole_1_5.png" class="lv-tko_whole"></div><div class="tile row-1 col-6"><img src="tko_whole/tko_whole_1_6.png" class="lv-tko_whole"></div><div class="tile row-1 col-7"><img src="tko_whole/tko_whole_1_7.png" class="lv-tko_whole"></div><div class="tile row-1 col-8"><img src="tko_whole/tko_whole_1_8.png" class="lv-tko_whole"></div><div class="tile row-1 col-9"><img src="tko_whole/tko_whole_1_9.png" class="lv-tko_whole"></div><div class="tile row-2 col-0"><img src="tko_whole/tko_whole_2_0.png" class="lv-tko_whole"></div><div class="tile row-2 col-1"><img src="tko_whole/tko_whole_2_1.png" class="lv-tko_whole"></div><div class="tile row-2 col-2"><img src="tko_whole/tko_whole_2_2.png" class="lv-tko_whole"></div><div class="tile row-2 col-3"><img src="nogo/nogo_2_3.png" class="lv-nogo"><img src="tko_whole/tko_whole_2_3.png" class="lv-tko_whole"></div><div class="tile row-2 col-4"><img src="fa/fa_2_4.png" class="lv-fa"><img src="recycle/recycle_2_4.png" class="lv-recycle"><img src="route/route_2_4.png" class="lv-route"><img src="nogo/nogo_2_4.png" class="lv-nogo"><img src="mtr/mtr_2_4.png" class="lv-mtr"><img src="tko_whole/tko_whole_2_4.png" class="lv-tko_whole"></div><div class="tile row-2 col-5"><img src="fa/fa_2_5.png" class="lv-fa"><img src="route/route_2_5.png" class="lv-route"><img src="nogo/nogo_2_5.png" class="lv-nogo"><img src="mtr/mtr_2_5.png" class="lv-mtr"><img src="shk/shk_2_5.png" class="lv-shk"><img src="tko_whole/tko_whole_2_5.png" class="lv-tko_whole"></div><div class="tile row-2 col-6"><img src="fa/fa_2_6.png" class="lv-fa"><img src="tko_whole/tko_whole_2_6.png" class="lv-tko_whole"></div><div class="tile row-2 col-7"><img src="tko_whole/tko_whole_2_7.png" class="lv-tko_whole"></div><div class="tile row-2 col-8"><img src="tko_whole/tko_whole_2_8.png" class="lv-tko_whole"></div><div class="tile row-2 col-9"><img src="tko_whole/tko_whole_2_9.png" class="lv-tko_whole"></div><div class="tile row-3 col-0"><img src="tko_whole/tko_whole_3_0.png" class="lv-tko_whole"></div><div class="tile row-3 col-1"><img src="tko_whole/tko_whole_3_1.png" class="lv-tko_whole"></div><div class="tile row-3 col-2"><img src="tko_whole/tko_whole_3_2.png" class="lv-tko_whole"></div><div class="tile row-3 col-3"><img src="nogo/nogo_3_3.png" class="lv-nogo"><img src="tko_whole/tko_whole_3_3.png" class="lv-tko_whole"></div><div class="tile row-3 col-4"><img src="fa/fa_3_4.png" class="lv-fa"><img src="recycle/recycle_3_4.png" class="lv-recycle"><img src="route/route_3_4.png" class="lv-route"><img src="nogo/nogo_3_4.png" class="lv-nogo"><img src="tko_whole/tko_whole_3_4.png" class="lv-tko_whole"></div><div class="tile row-3 col-5"><img src="fa/fa_3_5.png" class="lv-fa"><img src="recycle/recycle_3_5.png" class="lv-recycle"><img src="route/route_3_5.png" class="lv-route"><img src="nogo/nogo_3_5.png" class="lv-nogo"><img src="mtr/mtr_3_5.png" class="lv-mtr"><img src="shk/shk_3_5.png" class="lv-shk"><img src="tko_whole/tko_whole_3_5.png" class="lv-tko_whole"></div><div class="tile row-3 col-6"><img src="tko_whole/tko_whole_3_6.png" class="lv-tko_whole"></div><div class="tile row-3 col-7"><img src="tko_whole/tko_whole_3_7.png" class="lv-tko_whole"></div><div class="tile row-3 col-8"><img src="tko_whole/tko_whole_3_8.png" class="lv-tko_whole"></div><div class="tile row-3 col-9"><img src="tko_whole/tko_whole_3_9.png" class="lv-tko_whole"></div><div class="tile row-4 col-0"><img src="tko_whole/tko_whole_4_0.png" class="lv-tko_whole"></div><div class="tile row-4 col-1"><img src="tko_whole/tko_whole_4_1.png" class="lv-tko_whole"></div><div class="tile row-4 col-2"><img src="tko_whole/tko_whole_4_2.png" class="lv-tko_whole"></div><div class="tile row-4 col-3"><img src="nogo/nogo_4_3.png" class="lv-nogo"><img src="shk/shk_4_3.png" class="lv-shk"><img src="tko_whole/tko_whole_4_3.png" class="lv-tko_whole"></div><div class="tile row-4 col-4"><img src="nogo/nogo_4_4.png" class="lv-nogo"><img src="mtr/mtr_4_4.png" class="lv-mtr"><img src="shk/shk_4_4.png" class="lv-shk"><img src="tko_whole/tko_whole_4_4.png" class="lv-tko_whole"></div><div class="tile row-4 col-5"><img src="tko_whole/tko_whole_4_5.png" class="lv-tko_whole"></div><div class="tile row-4 col-6"><img src="tko_whole/tko_whole_4_6.png" class="lv-tko_whole"></div><div class="tile row-4 col-7"><img src="tko_whole/tko_whole_4_7.png" class="lv-tko_whole"></div><div class="tile row-4 col-8"><img src="tko_whole/tko_whole_4_8.png" class="lv-tko_whole"></div><div class="tile row-4 col-9"><img src="tko_whole/tko_whole_4_9.png" class="lv-tko_whole"></div><div class="tile row-5 col-0"><img src="tko_whole/tko_whole_5_0.png" class="lv-tko_whole"></div><div class="tile row-5 col-1"><img src="tko_whole/tko_whole_5_1.png" class="lv-tko_whole"></div><div class="tile row-5 col-2"><img src="mtr/mtr_5_2.png" class="lv-mtr"><img src="tko_whole/tko_whole_5_2.png" class="lv-tko_whole"></div><div class="tile row-5 col-3"><img src="mtr/mtr_5_3.png" class="lv-mtr"><img src="tko_whole/tko_whole_5_3.png" class="lv-tko_whole"></div><div class="tile row-5 col-4"><img src="shk/shk_5_4.png" class="lv-shk"><img src="tko_whole/tko_whole_5_4.png" class="lv-tko_whole"></div><div class="tile row-5 col-5"><img src="tko_whole/tko_whole_5_5.png" class="lv-tko_whole"></div><div class="tile row-5 col-6"><img src="tko_whole/tko_whole_5_6.png" class="lv-tko_whole"></div><div class="tile row-5 col-7"><img src="tko_whole/tko_whole_5_7.png" class="lv-tko_whole"></div><div class="tile row-5 col-8"><img src="tko_whole/tko_whole_5_8.png" class="lv-tko_whole"></div><div class="tile row-5 col-9"><img src="tko_whole/tko_whole_5_9.png" class="lv-tko_whole"></div><div class="tile row-6 col-0"><img src="mtr/mtr_6_0.png" class="lv-mtr"><img src="tko_whole/tko_whole_6_0.png" class="lv-tko_whole"></div><div class="tile row-6 col-1"><img src="tko_whole/tko_whole_6_1.png" class="lv-tko_whole"></div><div class="tile row-6 col-2"><img src="tko_whole/tko_whole_6_2.png" class="lv-tko_whole"></div><div class="tile row-6 col-3"><img src="tko_whole/tko_whole_6_3.png" class="lv-tko_whole"></div><div class="tile row-6 col-4"><img src="tko_whole/tko_whole_6_4.png" class="lv-tko_whole"></div><div class="tile row-6 col-5"><img src="tko_whole/tko_whole_6_5.png" class="lv-tko_whole"></div><div class="tile row-6 col-6"><img src="mtr/mtr_6_6.png" class="lv-mtr"><img src="tko_whole/tko_whole_6_6.png" class="lv-tko_whole"></div><div class="tile row-6 col-7"><img src="tko_whole/tko_whole_6_7.png" class="lv-tko_whole"></div><div class="tile row-6 col-8"><img src="tko_whole/tko_whole_6_8.png" class="lv-tko_whole"></div><div class="tile row-6 col-9"><img src="tko_whole/tko_whole_6_9.png" class="lv-tko_whole"></div><div class="tile row-7 col-0"><img src="tko_whole/tko_whole_7_0.png" class="lv-tko_whole"></div><div class="tile row-7 col-1"><img src="tko_whole/tko_whole_7_1.png" class="lv-tko_whole"></div><div class="tile row-7 col-2"><img src="tko_whole/tko_whole_7_2.png" class="lv-tko_whole"></div><div class="tile row-7 col-3"><img src="tko_whole/tko_whole_7_3.png" class="lv-tko_whole"></div><div class="tile row-7 col-4"><img src="tko_whole/tko_whole_7_4.png" class="lv-tko_whole"></div><div class="tile row-7 col-5"><img src="mtr/mtr_7_5.png" class="lv-mtr"><img src="tko_whole/tko_whole_7_5.png" class="lv-tko_whole"></div><div class="tile row-7 col-6"><img src="mtr/mtr_7_6.png" class="lv-mtr"><img src="tko_whole/tko_whole_7_6.png" class="lv-tko_whole"></div><div class="tile row-7 col-7"><img src="tko_whole/tko_whole_7_7.png" class="lv-tko_whole"></div><div class="tile row-7 col-8"><img src="tko_whole/tko_whole_7_8.png" class="lv-tko_whole"></div><div class="tile row-7 col-9"><img src="tko_whole/tko_whole_7_9.png" class="lv-tko_whole"></div><div class="tile row-8 col-0"><img src="tko_whole/tko_whole_8_0.png" class="lv-tko_whole"></div><div class="tile row-8 col-1"><img src="tko_whole/tko_whole_8_1.png" class="lv-tko_whole"></div><div class="tile row-8 col-2"><img src="tko_whole/tko_whole_8_2.png" class="lv-tko_whole"></div><div class="tile row-8 col-3"><img src="tko_whole/tko_whole_8_3.png" class="lv-tko_whole"></div><div class="tile row-8 col-4"><img src="tko_whole/tko_whole_8_4.png" class="lv-tko_whole"></div><div class="tile row-8 col-5"><img src="tko_whole/tko_whole_8_5.png" class="lv-tko_whole"></div><div class="tile row-8 col-6"><img src="tko_whole/tko_whole_8_6.png" class="lv-tko_whole"></div><div class="tile row-8 col-7"><img src="tko_whole/tko_whole_8_7.png" class="lv-tko_whole"></div><div class="tile row-8 col-8"><img src="tko_whole/tko_whole_8_8.png" class="lv-tko_whole"></div><div class="tile row-8 col-9"><img src="tko_whole/tko_whole_8_9.png" class="lv-tko_whole"></div><div class="tile row-9 col-0"><img src="tko_whole/tko_whole_9_0.png" class="lv-tko_whole"></div><div class="tile row-9 col-1"><img src="tko_whole/tko_whole_9_1.png" class="lv-tko_whole"></div><div class="tile row-9 col-2"><img src="tko_whole/tko_whole_9_2.png" class="lv-tko_whole"></div><div class="tile row-9 col-3"><img src="tko_whole/tko_whole_9_3.png" class="lv-tko_whole"></div><div class="tile row-9 col-4"><img src="tko_whole/tko_whole_9_4.png" class="lv-tko_whole"></div><div class="tile row-9 col-5"><img src="tko_whole/tko_whole_9_5.png" class="lv-tko_whole"></div><div class="tile row-9 col-6"><img src="tko_whole/tko_whole_9_6.png" class="lv-tko_whole"></div><div class="tile row-9 col-7"><img src="tko_whole/tko_whole_9_7.png" class="lv-tko_whole"></div><div class="tile row-9 col-8"><img src="tko_whole/tko_whole_9_8.png" class="lv-tko_whole"></div><div class="tile row-9 col-9"><img src="tko_whole/tko_whole_9_9.png" class="lv-tko_whole"></div></div>
+	
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  	/*
+
+  	const layers = ["fa", "recycle", "route", "nogo", "exits", "mtr", "shk", "tko_whole"];
+
+  	for (let r = 0; r < 10; r++) {
+  		for (let c = 0; c < 10; c++) {
+  			const tile = $("<div/>").addClass("tile").addClass(`row-${r}`).addClass(`col-${c}`);
+  			layers.forEach(e => {
+  				const imgEl = $("<img/>").attr("src", `${e}/${e}_${r}_${c}.png`).addClass(`lv-${e}`);
+  				tile.append(imgEl);
+  			})
+  			$("#map").append(tile);
+  		}
+  	}
+		
+		const removeUnusedImgs = function() {
+			[...document.querySelectorAll("img")]
+				.filter(e => e.width < 1920 && e.height < 1920)
+				.forEach(e => e.remove());
+		};
+
+		*/
+  </script>
+</body>
+</html>
